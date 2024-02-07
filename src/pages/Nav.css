@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap");
+:root {
+    --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+      "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+      "Source Han Sans CN", sans-serif;
+  }
+
+  
+.main-container {
+  position: relative;
+  width: 1328px;
+  /* height: 3909px; */
+  margin: 0 auto;
+  background: #ffffff;
+  overflow: hidden;
+}
+.section {
+  position: relative;
+  width: 1328px;
+  height: 850px;
+  margin: 0 0 0 0;
+  z-index: 133;
+}
+/* .faded_pic {
+  position: relative;
+  width: 1478.5px;
+  height: 850px;
+  top: 0;
+  left: 0;
+  background: url(../assets/images/faded_pic.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 120;
+} */
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  position: absolute;
+  width: 1028px;
+  height: 84px;
+  top: 0;
+  right: 0;
+  left: 0;    
+  padding: 20px 180px 20px 120px;
+  background: #ffffff;
+  z-index: 133;
+}
+  .logo_name {
+    flex-shrink: 0;
+    position: relative;
+    width: 149.048px;
+    height: 40px;
+    background: url(../assets/images/logo_name.png)
+      no-repeat center;
+    background-size: 100% 100%;
+    z-index: 134;
+  }
+  .group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 60px;
+    position: relative;
+    width: 393px;
+    z-index: 135;
+  }
+  .box {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 30px;
+    position: relative;
+    width: 157px;
+    z-index: 136;
+  }
+  .text {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 14px;
+    color: #252525;
+    font-family: DM Sans, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 14px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 137;
+  }
+  .box-2 {
+    flex-shrink: 0;
+    position: relative;
+    width: 2px;
+    height: 20px;
+    background: #252525;
+    z-index: 138;
+  }
+  .wrapper-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 10px;
+    position: relative;
+    width: 176px;
+    padding: 15px 18px 15px 18px;
+    background: #48afe3;
+    z-index: 140;
+    border-radius: 4px;
+  }
+  .text-2 {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 14px;
+    color: #ffffff;
+    font-family: DM Sans, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 14px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 141;
+  }
+  
