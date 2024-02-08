@@ -39,13 +39,13 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: nowrap;
-  position: absolute;
-  width: 1028px;
+  position: fixed;
+  width: 1150px;
   height: 84px;
   top: 0;
   right: 0;
   left: 0;    
-  padding: 20px 180px 20px 120px;
+  padding: 20px 190px 20px 220px;
   background: #ffffff;
   z-index: 133;
 }
