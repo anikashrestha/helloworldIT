@@ -18,7 +18,7 @@
 .section {
   position: relative;
   width: 1328px;
-  height: 850px;
+  height: 800px;
   margin: 0 0 0 0;
   z-index: 133;
 }
@@ -39,7 +39,6 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: nowrap;
-  position: fixed;
   width: 1150px;
   height: 50px;
   top: 0;
@@ -48,6 +47,7 @@
   padding: 20px 190px 20px 220px;
   background: #ffffff;
   z-index: 133;
+  position: fixed;
 }
   .logo_name {
     flex-shrink: 0;
@@ -115,6 +115,7 @@
     background: #48afe3;
     z-index: 140;
     border-radius: 4px;
+    cursor:pointer;
   }
   .text-2 {
     flex-shrink: 0;

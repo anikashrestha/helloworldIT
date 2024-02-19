@@ -1,40 +1,34 @@
 import React from 'react';
 import './ContactFooter.css';
+// import {useRef} from 'react';
+import ref from './Nav';
 
 export default function ContactFooter() {
+  
     return(
-        <div className='section-d'>
-        <div className='box-a'>
+        <div className='section-d' >
+        <div className='box-a' >
           <span className='text-29'>Just an email away.</span>
-          <div className='box-b'>
-            <div className='wrapper-9'>
-              <span className='text-2a'>Idea:</span>
-              <div className='section-e'>
-                <span className='text-2b'>Please enter your idea</span>
-              </div>
-            </div>
-            <div className='section-f'>
-              <span className='text-2c'>Name:</span>
-              <div className='group-13'>
-                <span className='text-2d'>Your name</span>
-              </div>
-            </div>
-            <div className='group-14'>
-              <span className='text-2e'>Email:</span>
-              <div className='wrapper-a'>
-                <span className='text-2f'>email@gmail.com</span>
-              </div>
-            </div>
-            <div className='box-c'>
-              <span className='text-30'>Contact:</span>
-              <div className='box-d'>
-                <span className='text-31'>+977-0000000000</span>
-              </div>
-            </div>
-          </div>
-          <div className='section-10'>
-            <span className='text-32'>Submit</span>
-          </div>
+          <form className="contact-form" >
+                  <div className="form-group">
+                      <label htmlFor="idea">Idea:</label>
+                      <textarea className="form-control" id="idea" rows="3" placeholder="Please enter your idea"></textarea>
+                  </div>
+                  <div className="form-group">
+                      <label htmlFor="name">Name:</label>
+                      <input type="text" className="form-control" id="name" placeholder="Your name" />
+                  </div>
+                  <div className="form-group">
+                      <label htmlFor="email">Email:</label>
+                      <input type="email" className="form-control" id="email" placeholder="email@gmail.com" />
+                  </div>
+                  <div className="form-group">
+                      <label htmlFor="contact">Contact:</label>
+                      <input type="text" className="form-control" id="contact" placeholder="+977-0000000000" />
+                  </div>
+                  <button type="submit" className="section-10"><span className='text-32'>Submit</span></button>
+              </form>
+          
         </div>
         <div className='wrapper-b'>
           <div className='section-11' />
@@ -46,7 +40,7 @@ export default function ContactFooter() {
             </div>
           </div>
         </div>
-        <div className='section-12'>
+        <form className='section-12'  >
           <span className='text-33'>
             We will convert your idea <br />
             into an Application.
@@ -63,7 +57,7 @@ export default function ContactFooter() {
             <div className='img-e' />
             <span className='text-35'>info@helloworldnepal.com</span>
           </div>
-        </div>
+        </form>
       </div>
     
     );

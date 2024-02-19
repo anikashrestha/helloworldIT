@@ -2,14 +2,14 @@
     position: relative;
     width: 1028px;
     height: 540px;
-    margin: 47px 0 0 279px;
+    /* margin: 47px 0 0 279px; */
     z-index: 74;
   }
   .group-10 {
     position: absolute;
     width: 1020px;
-    height: 400px;
-    top: 50px;
+    height: 350px;
+  top: 100px;
     left: 76px;
     background: #48afe3;
     opacity: 0.10000000149011612;
