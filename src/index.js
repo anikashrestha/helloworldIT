@@ -1,26 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Nav from './pages/Nav';
-import About from './pages/About';
-import Clients from './pages/Clients';
-import Services from './pages/Services';
-import Testimonials from './pages/Testimonials';
-import MainTestimonials from './pages/MainTestimonial';
-import ContactFooter from './pages/ContactFooter';
+import App from './App';
 import reportWebVitals from './reportWebVitals';
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Nav/>
-    <About/>
-    <Clients/>
-    <Services/>
-    <Testimonials/>
-    <MainTestimonials/>
-    <ContactFooter/>
+    <App/>
   </React.StrictMode>
 );
 
