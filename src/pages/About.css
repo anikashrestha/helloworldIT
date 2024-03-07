@@ -6,7 +6,7 @@
   justify-content: space-between;
   flex-wrap: nowrap;
   position: absolute;
-  width: 1028px;
+  width: 1328px;
   height: 450px;
   top: 200px;
   left: 50px;
@@ -33,6 +33,7 @@
   position: relative;
   width: 767px;
   z-index: 123;
+  left: 170px;
 }
 .textAbout-1 {
   display: flex;
@@ -149,6 +150,7 @@
   position: relative;
   width: 156px;
   z-index: 127;
+  left: 170px;
 }
 .insta {
   flex-shrink: 0;
