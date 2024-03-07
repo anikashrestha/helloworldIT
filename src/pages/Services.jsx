@@ -1,10 +1,28 @@
 import React from 'react';
 import './Services.css';
+import { useInView } from 'react-intersection-observer';
 
-export default function Services() {
+const FadeInSection = ({ children }) => {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
+  return (
+    <div
+      ref={ref}
+      className={`fade-in-section ${inView ? 'is-visible' : ''}`}
+    >
+      {children}
+    </div>
+  );
+};
+const Services = () =>   {
     return(
         <div className='wrapper-7'>
+        <FadeInSection>
         <div className='box-6'>
+          
           <span className='text-e'>Projects</span>
           <span className='text-f'>Our Services</span>
           <span className='text-10'>
@@ -12,27 +30,44 @@ export default function Services() {
             <br />
             of our unseen expertise.
           </span>
+          
         </div>
+        </FadeInSection> 
         <div className='group-6'>
           <div className='group-7'>
+            <FadeInSection>
             <div className='group-8'>
               <div className='pic-a' />
             </div>
+            </FadeInSection>
+            <FadeInSection>
             <div className='section-7'>
+              
               <span className='text-11'>Save the Children</span>
+              
               <div className='group-9'>
+                
                 <div className='box-7'>
+                
                   <span className='text-12'>GXMIS</span>
+                  
                 </div>
                 <div className='group-a'>
+                
                   <span className='text-13'>Web Application</span>
+                  
                 </div>
                 <div className='section-8'>
+                  
                   <span className='text-14'>Responsive</span>
+                  
                 </div>
                 <div className='section-9'>
+                  
                   <span className='text-15'>DHIS2</span>
+                  
                 </div>
+                
               </div>
               <span className='text-16'>
                 Our works for Nepal Tuberculosis center inclues various
@@ -42,10 +77,12 @@ export default function Services() {
                 <br />
               </span>
             </div>
+            </FadeInSection>
+
           </div>
           
           <div className='box-8'>
-          
+          <FadeInSection>
             <div className='wrapper-8'>
               <span className='text-17'>Distar Home</span>
               <div className='section-a'>
@@ -67,15 +104,22 @@ export default function Services() {
                 <br />
               </span>
             </div>
+            </FadeInSection>
+            <FadeInSection>
             <div className='group-d'>
               <div className='img-6' />
             </div>
+            </FadeInSection>
           </div>
         </div>
-        <div className='group-e'>
+       
+        <button className='group-e'>
           <span className='text-1c'>Work with Us</span>
-        </div>
+        </button>
+        
         <div className='pic-c2' />
       </div>
     );
 }
+
+export default Services;

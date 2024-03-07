@@ -9,6 +9,7 @@
     height: 949px;
     margin: 50px 0 0 281px;
     z-index: 84;
+    left: 170px;
   }
   .box-6 {
     display: flex;
@@ -501,6 +502,7 @@
     background: #48afe3;
     z-index: 118;
     border-radius: 4px;
+    cursor:pointer;
   }
   .text-1c {
     flex-shrink: 0;
@@ -527,4 +529,18 @@
     background-size: cover;
     transform: translate(-50%, 0);
     z-index: 83;
+  }
+
+  .fade-in-section {
+    opacity: 0;
+    transform: translateY(20vh);
+    visibility: hidden;
+    transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+    will-change: opacity, visibility;
+  }
+  
+  .fade-in-section.is-visible {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
   }
