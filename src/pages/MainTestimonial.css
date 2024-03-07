@@ -4,6 +4,7 @@
     height: 540px;
     /* margin: 47px 0 0 279px; */
     z-index: 74;
+    left: 170px;
   }
   .group-10 {
     position: absolute;
@@ -219,4 +220,18 @@
       no-repeat center;
     background-size: cover;
     z-index: 60;
+  }
+  
+  .fade-in-section {
+    opacity: 0;
+    transform: translateY(20vh);
+    visibility: hidden;
+    transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+    will-change: opacity, visibility;
+  }
+  
+  .fade-in-section.is-visible {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
   }
