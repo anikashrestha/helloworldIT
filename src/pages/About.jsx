@@ -6,8 +6,7 @@ const FadeInSection = ({ children }) => {
     const { ref, inView } = useInView({
       triggerOnce: true,
       threshold: 0.1,
-    });
-  
+    });  
     return (
       <div
         ref={ref}
@@ -20,12 +19,14 @@ const FadeInSection = ({ children }) => {
   const About = () => {
     return(
         // <div className='main-container'>
+        
             <div className='group-2'>
                 <div className='pic-2' />
                 <div className='section-2'>
                 
                     <div className='section-3'>
                     <span className='textAbout-1'>Web Application Development</span>
+                    <FadeInSection>
                     <div className='box-1'>
                         <span className='textAbout-2'>Empowering </span>
                         <span className='textAbout-3'>Healthcare </span>
@@ -36,10 +37,13 @@ const FadeInSection = ({ children }) => {
                         Advanced Information Solutions
                         </span>
                     </div>
+                    </FadeInSection>
+                    <FadeInSection>
                     <span className='textAbout-6'>
                         Revolutionizing Health Information Management and Web-based
                         Software Solutions for Excellence in Healthcare.
                     </span>
+                    </FadeInSection>
                     </div>
                     <div className='group-3'>
                     <div className='insta' />
@@ -49,12 +53,16 @@ const FadeInSection = ({ children }) => {
                 </div>
                 
                 <div className='wrapper-3'>
+                <FadeInSection>
                     <div className='logo' />
-                    {/* <div id="introSVGContainer" ></div> */}
+                    
+                    </FadeInSection>
                 </div>
                 
+                
             </div>
-        // </div>
+            
+        
     );
 }
   
