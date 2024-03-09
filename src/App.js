@@ -12,7 +12,7 @@ import ContactFooter from './pages/ContactFooter';
 
 function App() {
   return (
-    <div className="App">
+    <div>
     <Nav/>    
     <About/>
     <Clients/>
