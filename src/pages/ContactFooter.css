@@ -6,6 +6,7 @@
     z-index: 50;
     left: 170px;
   }
+  
   .box-a {
     display: flex;
     flex-direction: column;
