@@ -1,3 +1,4 @@
+@media screen and (max-width: 1960px){
 .group-f {
     display: flex;
     flex-direction: column;
@@ -5,7 +6,7 @@
     flex-wrap: nowrap;
     gap: 24px;
     position: relative;
-    width: 350px;
+    width: 30vw;
     height: 120px;
     margin: 100px 100px 15px 450px;
     z-index: 79;
@@ -58,3 +59,5 @@
     text-align: center;
     z-index: 82;
   }
+
+   }
